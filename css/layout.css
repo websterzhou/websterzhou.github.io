@@ -355,6 +355,16 @@ ul#nav li.current a { color: #F06000; }
   	-moz-animation: tableau 2s ease;
   	-webkit-animation: tableau 2s ease;
 }
+.english {
+  	width: 95%;
+  	-moz-animation: tableau 2s ease;
+  	-webkit-animation: tableau 2s ease;
+}
+.chinese {
+  	width: 90%;
+  	-moz-animation: tableau 2s ease;
+  	-webkit-animation: tableau 2s ease;
+}
 
 @-moz-keyframes stata {
   0%   { width: 0px;  }
@@ -380,6 +390,15 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
+@-moz-keyframes english {
+  0%   { width: 0px;  }
+  100% { width: 95%;  }
+}
+@-moz-keyframes chinese {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+
 
 @-webkit-keyframes stata {
   0%   { width: 0px;  }
@@ -404,6 +423,14 @@ ul#nav li.current a { color: #F06000; }
 @-webkit-keyframes tableau {
   0%   { width: 0px;  }
   100% { width: 50%;  }
+}
+@-webkit-keyframes english {
+  0%   { width: 0px;  }
+  100% { width: 95%;  }
+}
+@-webkit-keyframes chinese {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
 }
 
 /* ------------------------------------------------------------------ */
