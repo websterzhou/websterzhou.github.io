@@ -346,14 +346,14 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: excel 2s ease;
 }
 .python {
-  	width: 60%;
+  	width: 55%;
   	-moz-animation: python 2s ease;
   	-webkit-animation: python 2s ease;
 }
-.jquery {
+.tableau {
   	width: 50%;
-  	-moz-animation: jquery 2s ease;
-  	-webkit-animation: jquery 2s ease;
+  	-moz-animation: tableau 2s ease;
+  	-webkit-animation: tableau 2s ease;
 }
 
 @-moz-keyframes stata {
@@ -374,9 +374,9 @@ ul#nav li.current a { color: #F06000; }
 }
 @-moz-keyframes python {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 55%;  }
 }
-@-moz-keyframes jquery {
+@-moz-keyframes tableau {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
@@ -399,9 +399,9 @@ ul#nav li.current a { color: #F06000; }
 }
 @-webkit-keyframes python {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 55%;  }
 }
-@-webkit-keyframes jquery {
+@-webkit-keyframes tableau {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
