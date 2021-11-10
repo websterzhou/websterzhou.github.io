@@ -335,20 +335,20 @@ ul#nav li.current a { color: #F06000; }
   	-moz-animation: rstudio 2s ease;
   	-webkit-animation: rstudio 2s ease;
 }
-.wordpress {
+.sql {
   	width: 75%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
+  	-moz-animation: sql 2s ease;
+  	-webkit-animation: sql 2s ease;
 }
-.css {
-  	width: 90%;
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
+.excel {
+  	width: 75%;
+  	-moz-animation: excel 2s ease;
+  	-webkit-animation: excel 2s ease;
 }
-.html5 {
-  	width: 80%;
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
+.python {
+  	width: 60%;
+  	-moz-animation: python 2s ease;
+  	-webkit-animation: python 2s ease;
 }
 .jquery {
   	width: 50%;
@@ -364,17 +364,17 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 85%;  }
 }
-@-moz-keyframes wordpress {
+@-moz-keyframes sql {
   0%   { width: 0px;  }
   100% { width: 75%;  }
 }
-@-moz-keyframes css {
+@-moz-keyframes excel {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 75%;  }
 }
-@-moz-keyframes html5 {
+@-moz-keyframes python {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 60%;  }
 }
 @-moz-keyframes jquery {
   0%   { width: 0px;  }
@@ -389,17 +389,17 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 85%;  }
 }
-@-webkit-keyframes wordpress {
+@-webkit-keyframes sql {
   0%   { width: 0px;  }
   100% { width: 75%;  }
 }
-@-webkit-keyframes css {
+@-webkit-keyframes excel {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 75%;  }
 }
-@-webkit-keyframes html5 {
+@-webkit-keyframes python {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 60%;  }
 }
 @-webkit-keyframes jquery {
   0%   { width: 0px;  }
