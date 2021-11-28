@@ -300,7 +300,7 @@ head(stops)</code></pre>
 <div id="best-stops" class="section level1" number="3">
 <h1><span class="header-section-number">3</span> 10 best stops</h1>
 <p>As a first step, let’s geolocate all those addresses, which is really just a fancy way to say let’s get lat and long from the addresses. In general, whenever possible, it is always a good idea to go from addresses to lat/long.</p>
-<p>Lat and long are continuous variables and most ML models deal very well with them, extracting tons of information. On the other hand, geographical variables stored as categorical variables (like country, state, city, address, etc) are particularly complicated for most models, especially because you typically end up having tons of different levels, each level having few events. And this is a nightmare for most ML models.</p>
+<p>Lat and long are continuous variables and most ML models deal very well with them, extracting tons of information. On the other hand, geographical variables stored as categorical variables (like country, state, city, address, etc) are particularly complicated for most models, especially because we typically end up having tons of different levels, each level having few events. And this is a nightmare for most ML models.</p>
 <pre class="r"><code>#Geocode function via Bing Api
 BingGeoCode &lt;- function(string){
     u = URLencode(paste0(&quot;http://dev.virtualearth.net/REST/v1/Locations?q=&quot;, string, &quot;&amp;maxResults=1&amp;key=Auxf825mnBqDYiijsjj_3LjianQlT2lPCxWsMf4IeTwXq9HXAV3n60BBUZmGXhO6&quot;))
