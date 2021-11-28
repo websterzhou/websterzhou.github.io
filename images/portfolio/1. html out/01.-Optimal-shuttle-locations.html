@@ -430,8 +430,6 @@ ggmap(sq_map) +
 <li><p>When we optimize the bus stops, we are considering all the employees. However this might not make sense. If someone is really far from their closest bus stop, they might not take the shuttle anyway. And, even if they are going to take it, it won’t make much of a difference a 25 vs a 30 minute distance. There is probably not much point in optimizing for these people. Therefore, they could be removed before doing the clustering or we could reduce their weight right before clustering.</p></li>
 <li><p>If two optimal bus stops end up being very close, this would be inefficient from a practical standpoint. Assume 2 bus stops are within 2 minutes from each other. It would definitely be more efficient merging those two into one stop and either just having 9 stops or adding a new one. From an algorithm standpoint, this would translate into adding a constraint when the cluster centroids are created such that their distance cannot be &lt;X.</p></li>
 </ol>
-<p>A takehome challenge is rarely the place to come up with a perfect solution. After all, they are usually supposed to be solved in a few hrs max. However, adding comments about what you would do with more time is very important.</p>
-<p>Also, note how open ended it is. Take advantage of this by playing to your strengths. If you are great in data visualization, create informative plots. If you are a very detailed oriented person, focus on cleaning the addresses. Strong ML -&gt; optimize the clusters. Strong product sense -&gt; give ideas on how to improve this from a product standpoint. Engineering skills can be highlighted by using an API to get actual time that takes from each address to those stops, and so on.</p>
 </div>
 </div>
 
