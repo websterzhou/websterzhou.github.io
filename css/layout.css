@@ -340,7 +340,7 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: rstudio 2s ease;
 }
 .sql {
-  	width: 75%;
+  	width: 70%;
   	-moz-animation: sql 2s ease;
   	-webkit-animation: sql 2s ease;
 }
@@ -350,7 +350,7 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: excel 2s ease;
 }
 .python {
-  	width: 55%;
+  	width: 75%;
   	-moz-animation: python 2s ease;
   	-webkit-animation: python 2s ease;
 }
