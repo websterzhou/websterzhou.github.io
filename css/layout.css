@@ -350,7 +350,7 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: excel 2s ease;
 }
 .python {
-  	width: 75%;
+  	width: 70%;
   	-moz-animation: python 2s ease;
   	-webkit-animation: python 2s ease;
 }
