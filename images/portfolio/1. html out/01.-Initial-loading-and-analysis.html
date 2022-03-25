@@ -253,6 +253,10 @@ div.tocify {
 
 
 <p>First, we load the useful packages.</p>
+<pre class="r"><code>library(tidyverse)
+library(ggmap) 
+library(lfe) #Transforms away factors with many levels prior to doing an OLS. Useful for estimating linear models with multiple group fixed effects, and for estimating linear models which uses factors with many levels as pure control variables. Includes support for instrumental variables, conditional F statistics for weak instruments, robust and multi-way clustered standard errors, as well as limited mobility bias correction.
+library(here)</code></pre>
 <div id="downloading-the-data" class="section level1" number="1">
 <h1><span class="header-section-number">1</span> Downloading the data</h1>
 <p>We go and download the data where it is, on the InsideAirbnb website. We choose to download the data from July 2019 for London (pre-pandemic).</p>
@@ -273,6 +277,11 @@ div.tocify {
 #   &quot;http://data.insideairbnb.com/united-kingdom/england/london/2019-07-10/visualisations/neighbourhoods.geojson&quot;,
 #   here(&quot;01. Raw&quot;,&quot;neighbourhoods.geojson&quot;))</code></pre>
 <p>Now that we have downloaded the data, we open the different files and store them into R objects. Note that we do not need to unzip the files, it is done on the fly.</p>
+<pre class="r"><code>listdb &lt;- read_csv(here(&quot;01. Raw&quot;,&quot;listings.csv.gz&quot;))</code></pre>
+<pre><code>## Warning: One or more parsing issues, see `problems()` for details</code></pre>
+<pre class="r"><code>caldb &lt;- read_csv(here(&quot;01. Raw&quot;,&quot;calendar.csv.gz&quot;))
+revdb &lt;- read_csv(here(&quot;01. Raw&quot;, &quot;reviews.csv.gz&quot;))
+neighdb &lt;- geojsonsf::geojson_sf(here(&quot;01. Raw&quot;, &quot;neighbourhoods.geojson&quot;))</code></pre>
 <p>Let’s see what these datasets look like. - Listings: shows characteristics and price posted by 83,850 listings in July 2019 in London. Of particular interest is precise location, descriptions, and number of reviews - Calendar: shows for each date in the calendar and each listing (30 million observations) if the day is available, how much it costs, and the number of bookable nights - Reviews: 1.4 million reviews available for these listings. - Neighbourhoods: this is a geographic dataset with the contours of London boroughs.</p>
 <pre class="r"><code>listdb %&gt;% head()</code></pre>
 <pre><code>## # A tibble: 6 × 106
